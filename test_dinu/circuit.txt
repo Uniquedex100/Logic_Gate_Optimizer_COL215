@@ -1,0 +1,7 @@
+PRIMARY_INPUTS dixxf emujw yryvh
+PRIMARY_OUTPUTS iumzu
+INTERNAL_SIGNALS oxtah ckilu cigaw eqamb sopuo
+NAND2  
+OR2  
+OR2  
+NOR2  

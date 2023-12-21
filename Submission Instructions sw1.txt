@@ -1,0 +1,45 @@
+The submission link for Software assignment 1 will be active from mid night today (17th August 11:59 pm). The assignment will be run against an auto-grader on Gradescope to check if the code adheres to the rules. Please go through the following submission guidelines CAREFULLY:
+
+1. Only code in .cpp or .py format would be accepted. The auto-grader only supports Python3
+
+2. The code should be in a single file called main.cpp or main.py. The name is case sensitive and this exact name should be used.
+
+3. 4 command line arguments will be provided in the following order <part A or B> circuit.txt gate_delays.txt required_delays.txt. Please mind the order. Part A or Part B refer to the parts of the assignment.
+
+for instance the following command shall run the code:
+
+cpp: $./compiled A circuit.txt gate_delays.txt required_delays.txt
+
+python: $python3 main.py A circuit.txt gate_delays.txt required_delays.txt
+
+4. The output of each part should be generated separately and stored in individual text files. The output to part A should be stored in "output_delays.txt" and the output to part B should be stored in "input_delays.txt". Please be careful when naming the files.
+
+5. CPP files will be compiled in the following way
+
+$g++ main.cpp -o compiled
+
+6. The following extra libraries will be available to python users (apart from the ones that come packed with a default python install)
+
+glob, subprocess, numpy, Cython.
+
+7. Arrange your directories in the following way. The root directory should be called "sw1"
+
+sw1
+
+|
+
+|----main.cpp(or .py)
+
+|----ProjectFiles
+
+|---|----report.pdf
+
+|---|----AdditionalTestCases
+
+|---|----|---(Your new test cases)
+
+8. The root directory sw1 should only contain the code file. Every other file should be inside the ProjectFiles directory. You must compress sw1 to a zip file named sw1.zip.
+
+9. The contents of your output file will be tested against our output files. use the "cmp" command in linux to verify that your txt files match. Note that every line in the output should end with a newline character or "\n".
+
+10. The auto-grader will show 100/100 in case your code passes the test case and 0/100 if it fails. Please note the test case is very straightforward so if your code fails it means there probably are syntactical errors.
